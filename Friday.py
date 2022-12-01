@@ -29,7 +29,7 @@ def executa_comando():
         #printa caso microfone esteja com problema
         print('Microfone não está ok')
     return comando
-
+  #comandos de voz que a ia pode executar
 def comando_voz_usuario():
     comando = executa_comando()
     ## informa a hora
@@ -59,7 +59,7 @@ def comando_voz_usuario():
         maquina.say('Tocando Música')
         maquina.runAndWait()
     
-    
+    comando_voz_usuario()
 # executa as funcao base de comando de voz do usuario
 comando_voz_usuario()
 #https://python-googlesearch.readthedocs.io/en/latest/index.html#googlesearch.search
