@@ -13,6 +13,7 @@ maquina = pyttsx3.init()
 
 ## metodo que executa comando de voz
 def executa_comando():
+    comando = ''
     try:
         #configura som, faz o print ouvindo..,
         with sr.Microphone() as source:
@@ -58,7 +59,7 @@ def comando_voz_usuario():
         resultado = pywhatkit.playonyt(musica)
         maquina.say('Tocando Música')
         maquina.runAndWait()
-    
+
     comando_voz_usuario()
 # executa as funcao base de comando de voz do usuario
 comando_voz_usuario()
